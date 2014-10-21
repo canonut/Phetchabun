@@ -1,0 +1,2 @@
+serviceClass: th.ac.utcc.phetchabun.client.GreetingService
+path: C3FA5BEDB5E480E3B4BB68499657B73B.gwt.rpc
