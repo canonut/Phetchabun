@@ -14,8 +14,6 @@
 		
 	}else{
 		out.println("Username / Password incorrect !! ");
-		
-		
 	}
 	
 %>
