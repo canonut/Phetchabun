@@ -1,2 +1,3 @@
 # Module phetchabun
 # RPC service class, partial path of RPC policy file
+th.ac.utcc.phetchabun.client.GreetingService, C3FA5BEDB5E480E3B4BB68499657B73B.gwt.rpc

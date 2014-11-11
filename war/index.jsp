@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="../..-/favicon.ico">
    	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<script src="assets/js/ie-emulation-modes-warning.js"></script>
 	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
@@ -37,7 +37,7 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.jsp">หน้าหลัก</a></li>
-        <li><a href="#">ที่ท่องเที่ยว</a></li>
+        <li><a href="travel.jsp">ที่ท่องเที่ยว</a></li>
         <li><a href="#">ข้อมูลจังหวัด</a></li>
         <li><a href="contact.jsp">ติดต่อเรา</a></li>
       </ul>

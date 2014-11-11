@@ -40,7 +40,7 @@
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="index.jsp">หน้าหลัก</a></li>
-					<li><a href="#">ที่ท่องเที่ยว</a></li>
+					<li><a href="travel.jsp">ที่ท่องเที่ยว</a></li>
 					<li><a href="#">ข้อมูลจังหวัด</a></li>
 					<li class="active"><a href="contact.jsp">ติดต่อเรา</a></li>
 				</ul> 
