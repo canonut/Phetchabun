@@ -5,7 +5,7 @@
 	String username_session = (String)session.getAttribute("username_session");
 %>
 <html>
-<title>หน้าหลัก</title>
+<title>ที่กิน</title>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -36,10 +36,10 @@
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.jsp">หน้าหลัก</a></li>
-        <li><a href="travel.jsp">ที่ท่องเที่ยว</a></li>
+        <li><a href="index.jsp">หน้าหลัก</a></li>
+        <li ><a href="travel.jsp">ที่ท่องเที่ยว</a></li>
         <li><a href="rest.jsp">ที่พัก</a></li>
-        <li><a href="eat.jsp">ที่กิน</a></li>
+        <li class="active"><a href="eat.jsp">ที่กิน</a></li>
         <li><a href="about.jsp">ข้อมูลจังหวัด</a></li>
         <li><a href="contact.jsp">ติดต่อเรา</a></li>
       </ul>
@@ -70,69 +70,23 @@
 </nav>
 
 <div class="container">
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  		<!-- Indicators -->
-  		<ol class="carousel-indicators">
-    		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    		<li data-target="#myCarousel" data-slide-to="1"></li>
-    		<li data-target="#myCarousel" data-slide-to="2"></li>
-  		</ol>
-  			<div class="carousel-inner">
-    			<div class="item active">
-      			<img src="img/_DSF5894.jpg" alt="First slide">
-      			<div class="carousel-caption"></div>
-    			</div>
-    			<div class="item">
-      			<img src="img/IMG_9222.jpg" alt="Second slide">
-      			<div class="carousel-caption"></div>
-    			</div>
-    			<div class="item">
-      			<img src="img/IMG_9121.jpg" alt="Third slide">
-      			<div class="carousel-caption"></div>
-  				</div>
-  			</div>
-		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-		<marquee id="adver"></marquee>
-	</div>
-</div>	<!-- /.carousel -->
-
-<div class="container">
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4><span class="glyphicon glyphicon-cloud"></span>&nbsp;ที่กิน</h4>
-      </div>
-      <img class="img-responsive img-portfolio img-hover" src="img/1325671070_800645.jpg" alt="">
-      <div class="panel-body">
-        <p>ไร่จันทร์แรม  เพชรบูรณ์</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
+    <div class="col-md-12">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h4><span class="glyphicon glyphicon-cloud"></span>&nbsp;ที่เที่ยว</h4>
+          <center><h4><span class="glyphicon glyphicon-cloud"></span>&nbsp;สถานที่กิน</h4></center>
         </div>
-        <img class="img-responsive img-portfolio img-hover" src="img/10721365_4806225449562_1428579560_n.jpg" alt="">
-        <div class="panel-body">
-          <p>ทุ่งแสลงหลวง</p>
-          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4><span class="glyphicon glyphicon-cloud"></span>&nbsp;ที่พัก</h4>
-          </div>
-          <img class="img-responsive img-portfolio img-hover" src="img/10617628_4806202488988_236025488_n.jpg" alt="">
-          <div class="panel-body">
-            <p>TheSense วิวทะเลหมอกเขาค้อ</p>
-            </div>
-          </div>
-        </div>
       </div>
-
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+      <section id="provider">
+<div id="travel"></div>
+</section>
+</div>
+        <div class="col-md-1"></div>
+      </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/docs.min.js"></script>
@@ -153,3 +107,25 @@
     </body>
     </html>
 </html>
+<script>
+$(document).ready(function(){
+$(".tool").tooltip();
+});
+</script>
+</body>
+</html>
+<script>
+$(document).ready(function() {
+var data = '{"travel":['
++ '{"heading":"ก้ามปูเฮาส์","picture":"e1.jpg","paragraph":"ถ.เพชรเจริญ ต.ในเมือง	เบอร์ติดต่อ056-720697	อาหารแนะนำ ยำกระเทียมโทน " },'
++ '{"heading":"ขนมจีนคุณตา","picture":"e2.jpg","paragraph":"ถ.สระบุรี- หล่มสัก ต.นางั่ว	เบอร์ติดต่อ056-741586	อาหารแนะนำ ขนมจีน,ส้มตำปูม้า" },'
++ '{"heading":"อ.กุ้งเผา","picture":"e3.jpg","paragraph":"ถ.สระบุรี-หล่มสัก ต.นางั่ว	เบอร์ดืดต่อ 087-2236009 อาหารแนะนำ กุ้งอบวุ้นเส้น,ปลาหมึกนึ่งมะนาว" },'
++ '{"heading":"สุกี้เจ๊เนี๊ยบ","picture":"e4.jpg","paragraph":"ถ.เพชรเจริญ ต.ในเมือง	เบอร์ตืดต่อ 056-727562	อาหารแนะนำ สุกี้น้ำ/แห้ง,อาหารต่างๆอีกมากมาย " },'
++ '{"heading":"ไร่จันทร์แรม","picture":"e6.jpg","paragraph":"2196 เลขที่ 152 ม.8 ต.เขาค้อ อ.เขาค้อ จ.เพชรบูรณ์ อาหารแนะนำ อาหารต่างๆอีกมากมายหลายอย่าง " },'
++ '{"heading":"นิดอาหารป่า","picture":"e5.jpg","paragraph":"ต.วังชมพู อ.เมือง	เบอร์ตืดต่อ 056-771051	อาหารแนะนำ ปลาค้าวผัดฉ่า,มะระยัดไข่" }]}';
+var result = eval("(" + data + ")");
+for (var i = 0; i < result.travel.length; i++) {
+	$("#travel").append("<div class=\"col-md-3\"><div class=\"panel panel-default\"><div class=\"panel-heading\">"+result.travel[i].heading+"</h4></div><img src=\"img/"+result.travel[i].picture+"\" id=\"travel\" width=\"240\" height=\"260\"><div class=\"panel-body\"><p>"+result.travel[i].paragraph+"</p></div></div></div></div>");
+}   
+});
+</script> 
